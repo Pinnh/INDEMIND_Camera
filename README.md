@@ -8,7 +8,7 @@ opencv4.x (default not need,when you want to show images,open in CMakeLists.txt 
 
 ## Build and Run
 
-`
+
 mkdir build
 
 cd build
@@ -20,11 +20,11 @@ make
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../driver/lib/x86-64
 
 sudo ./imsee_data_cap
-`
+
 
 # Build with Ros2
 
-`
+
 cd ros2/
 
 sudo -s
@@ -36,4 +36,4 @@ colcon build --symlink-install
 source install/setup.sh
 
 ros2 run data_cap capture_image_imu
-`
+
