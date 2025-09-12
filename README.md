@@ -4,7 +4,7 @@ A simpler way to get Indemind camera and imu's data (worked on ubuntu18.04 to ub
 
 # Dependencies
 
-opencv4.x (default not need,when you want to show images,open in CMakeLists.txt by set(USE_OPENCV 1) and config it's path)
+opencv4.x (default not need, when you want to show images, open in CMakeLists.txt by set(USE_OPENCV 1) and config it's path)
 
 ## Build and Run
 
@@ -29,7 +29,7 @@ cd ros2/
 
 sudo -s
 
-source /opt/ros/humble/setup.sh
+source /opt/ros/humble/setup.sh #set to you ros2 path
 
 colcon build --symlink-install
 
