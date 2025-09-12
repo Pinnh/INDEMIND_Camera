@@ -1,11 +1,14 @@
 # INDEMIND_Camera
 
+A simpler way to get Indemind camera and imu's data (worked on ubuntu18.04 to ubuntu 22.04, ubuntu 24.04 is not test,may also work)
+
+# Dependencies
+
+opencv4.x (default not need,when you want to show images,open in CMakeLists.txt by set(USE_OPENCV 1) and config it's path)
 
 ## Build and Run
 
 `
-cd demo
-
 mkdir build
 
 cd build
@@ -14,7 +17,9 @@ cmake ..
 
 make
 
-sudo ./data_cap
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../driver/lib/x86-64
+
+sudo ./imsee_data_cap
 `
 
 # Build with Ros2
